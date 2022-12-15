@@ -79,13 +79,23 @@ console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
+removedFood = favoriteFoods.shift()
+console.log('Removed the first food', removedFood);
+console.log('Favorite foods are now:', favoriteFoods);
 
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+function swapElements(favoriteFoods, i1, i2) {
+    [favoriteFoods[i1], favoriteFoods[i2]] = [favoriteFoods [i2], favoriteFoods [i1]];
+}
+
+swapElements(favoriteFoods, 1, 3);
+console.log(favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
