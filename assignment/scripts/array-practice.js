@@ -109,3 +109,7 @@ console.log (text);
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
+combinedArray = animalArray.concat (favoriteFoods);
+console.log(combinedArray);
+
